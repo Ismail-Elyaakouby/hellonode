@@ -30,7 +30,7 @@ node {
          * Second, the 'latest' tag.
          * Pushing multiple tags is cheap, as all the layers are reused. */
 //        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-        docker.withRegistry('https://hub.docker.com/', '704462d4-6f6f-4d31-b754-420659563d8c') {
+        docker.withRegistry('https://hub.docker.com/r/', '704462d4-6f6f-4d31-b754-420659563d8c') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
         }
