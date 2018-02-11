@@ -21,7 +21,7 @@ node {
 
         app.inside {
             sh 'echo "Tests passed"'
-            sh 'echo ${env.BUILD_NUMBER}'
+            //sh 'echo ${env.BUILD_NUMBER}'
             
         }
     }
