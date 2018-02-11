@@ -37,7 +37,7 @@ node {
   docker.withRegistry('https://hub.docker.com/', '704462d4-6f6f-4d31-b754-420659563d8c') {
     docker.image('88915020/hellonode').push('latest')
   //}
-  //}
+  }
   }
 
 
