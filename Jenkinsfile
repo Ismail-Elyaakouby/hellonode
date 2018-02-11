@@ -21,6 +21,8 @@ node {
 
         app.inside {
             sh 'echo "Tests passed"'
+            sh '${env.BUILD_NUMBER}'
+            
         }
     }
 
@@ -34,6 +36,9 @@ node {
           docker.withRegistry('https://hub.docker.com/r/', 'docker-hub-credentials') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
+          //sh 'docker login -u 88915020 -p Ismail1988'    
+          //sh 'docker login -u 88915020 -p Ismail1988'    
+          
   //}
   }
   }
