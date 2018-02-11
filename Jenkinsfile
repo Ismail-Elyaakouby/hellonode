@@ -12,7 +12,7 @@ node {
          * docker build on the command line */
 
  //       app = docker.build("getintodevops/hellonode")
-        app = docker.build("88915020/hellonode")
+        app = docker.build("88915020/hello")
     }
 
     stage('Test image') {
